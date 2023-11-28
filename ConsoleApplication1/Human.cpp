@@ -36,3 +36,23 @@ Human& Human::operator++(int val)
 	this->weight += 1;
 	return human;
 }
+
+void Human::setAge(int age)
+{
+	std::cout << "Ведите возраст" << std::endl;
+	this->age = age;
+}
+
+void Human::setHeight(double height)
+{
+
+	std::cout << "Ведите рост" << std::endl;
+	this->height = height;
+}
+
+void Human::setWeight(double weight)
+{
+	std::cout << "Ведите вес" << std::endl;
+	this->weight = weight;
+}
+

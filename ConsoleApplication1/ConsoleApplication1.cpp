@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "Human.h"
 #include <Windows.h>
+#include "Student.h"
 void ageing(Human &age) {
     age.age += 10;
 }
@@ -8,7 +9,8 @@ void ageing(Human &age) {
 int main()
 {
     setlocale(LC_ALL, "rus");
-    Human one("Adam", "Adamovich", 43, 180, 75);
+   // Human one("Adam", "Adamovich", 43, 180, 75);
+    //перегрузка операторов 
   /*  one.display();
     one++;
     one.display();
@@ -20,7 +22,7 @@ int main()
     one.display();*/
 
     //статик тест
-    Brain a(24,56);
+   /* Brain a(24,56);
     std::cout << "Мозг А" << std::endl;
     a.display();
     Brain b(90, 123);
@@ -33,7 +35,9 @@ int main()
     std::cout << "Мозг А" << std::endl;
     a.display();
     std::cout << "Мозг Б" << std::endl;
-    b.display();
+    b.display();*/
 
+    Student ac("Adam", "Adamovich", 43, 180, 75,23,"FIT");
+    ac.display();
 }
 

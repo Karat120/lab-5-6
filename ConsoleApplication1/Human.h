@@ -34,6 +34,9 @@ public:
 	Human& operator ++();//префиксный инкримент 
 	Human& operator ++(int val); //постфиксный 
 	friend void ageing(Human& age);
+	void setAge(int age);
+	void setHeight(double height);
+	void setWeight(double weight);
 
 };
 
