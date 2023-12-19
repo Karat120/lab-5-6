@@ -13,8 +13,8 @@ public:
 		
 	}
 	Brain(int iq, int size) {
-		this->iq = iq;
-		this->size = size;
+			this->iq = iq;
+			this->size = size;
 	}
 	static int GetChromosome() {
 		return Chromosome;
@@ -23,5 +23,6 @@ public:
 		Chromosome = value;
 	}
 	void display();
+	void get_iq();
 };
 

@@ -1,7 +1,8 @@
 #pragma once
 #include "Brain.h"
 #include <iostream>
-
+#include <fstream>
+#include <string>
 
 class Human
 {
@@ -19,7 +20,7 @@ public:
 		weight = 0;
 		name = " ";
 		surname = " ";
-		brain = Brain();
+		brain = Brain(30,20);
 	}
 	Human(std::string name, std::string surname, int age, double height, double weight) {
 		this->name = name;
@@ -37,6 +38,8 @@ public:
 	void setAge(int age);
 	void setHeight(double height);
 	void setWeight(double weight);
-
+	void remember_word();
+	void recall_word();
+	void examination();
 };
 
