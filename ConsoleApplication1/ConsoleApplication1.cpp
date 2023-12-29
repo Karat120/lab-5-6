@@ -14,5 +14,6 @@ int main()
     one.recall_word();
     Human two;
     two.examination();
+
 }
 
